@@ -7,7 +7,13 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.infusion.relnotesgen.log.ReleaseNotesLogger" level="debug">
+	<logger name="com.infusion.jiramigrationtool" level="debug" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
+
+	<!--
+	<root level="DEBUG">         
+    	<appender-ref ref="STDOUT" />
+  	</root> 
+	-->
 </configuration>
