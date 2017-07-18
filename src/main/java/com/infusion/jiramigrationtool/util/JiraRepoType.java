@@ -1,7 +1,8 @@
 package com.infusion.jiramigrationtool.util;
 
 public enum JiraRepoType {
-    SOURCE("Source"), DESTINATION("Destination");
+    SOURCE("Source"),
+    DESTINATION("Destination");
 
     private String title;
 

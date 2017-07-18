@@ -1,8 +1,12 @@
 package com.infusion.jiramigrationtool.util;
 
 public enum MetadataType {
-    FIELDS("Fields"), LINKS("Links"), TYPES("Types"), PRIORITIES("Priorities"), RESOLUTIONS("Resolutions"), STATUSES(
-            "Statuses");
+    FIELDS("Fields"),
+    LINKS("Links"),
+    TYPES("Types"),
+    PRIORITIES("Priorities"),
+    RESOLUTIONS("Resolutions"),
+    STATUSES("Statuses");
 
     private String title;
 

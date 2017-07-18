@@ -1,6 +1,14 @@
 # Jira Migration Tool
 
-## JMT is a java program for migrating content from one Jira instance to another
+## JMT is a java program for migrating content from one Jira instance to another.  It migrates the issues and testcases including the following:
+*** all setable mapped fields
+*** comments
+*** worklogs
+*** attachements
+*** test steps
+*** executions
+*** test step results
+
 
 ## Sample use
 
@@ -32,3 +40,17 @@ sample configuration.properties file can be found in src/test/resources/configur
 | jira.srcRefKey   			| destination field key used to hold reference to source issue/test | FOR id |
 | jira.field.blackList   			| list of field ids to skip | resolutiondate,workratio,lastViewed |
 
+## Known issues
+
+### ZAPI
+The ZAPI add-on is required to copy over the Zephyr data.
+
+### Zephyr permissions
+Errors may occur if the permissions for the user specified in the configuration file does not have correct Zephyr project permissions.  For example, you may see an error similar to this: "Error validating logged-in users permission against Zephyr custom permissions".  If this occurs follow these steps:
+#### Go to Manage Add-ons -> Zephyr -> configure
+#### Enable 'Enable Zephyr Permission Scheme'
+#### Re-index
+#### Assign the Zephyr QA permission to the user
+
+### Blacklist fields
+Some fields cannot be updated or set, these fields should be added to the blacklist parameter in the configuration file

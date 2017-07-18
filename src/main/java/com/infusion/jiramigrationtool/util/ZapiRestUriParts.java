@@ -10,6 +10,7 @@ public enum ZapiRestUriParts {
     POST_EXECUTION_BY_ID("/rest/zapi/latest/execution"),
     PUT_STEP_RESULT_STATUS("/rest/zapi/latest/stepResult/"),
     PUT_EXECUTION_STATUS("/rest/zapi/latest/execution/??/execute");
+
     private String pathPart;
 
     ZapiRestUriParts(final String pathPart) {

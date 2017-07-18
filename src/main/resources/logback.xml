@@ -7,7 +7,7 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.infusion.jiramigrationtool" level="debug" additivity="false">
+	<logger name="com.infusion.jiramigrationtool" level="trace" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
 
