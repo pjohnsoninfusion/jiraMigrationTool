@@ -21,8 +21,8 @@ sample configuration.properties file can be found in src/test/resources/configur
 
 ## Parameters overview
 
-| .properties params name   | description         | example value |
- -------------------------- | ----------------------------- | ------------------  | ------ |
+| .properties params name   | description               | example value             |
+| ------------------------- | ------------------------- | ------------------------- |
 | n/a    					| path to properties file with configuration params | ./../configuration.properties |
 | jira.url.source      			| URL to jira | https://ensemble.atlassian.net |
 | jira.username.source   			| Jira username | johnny  |
